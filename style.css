@@ -1,0 +1,73 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;     
+}
+
+.wrapper{
+    width: 100vw;
+    height: 100vh; 
+    background-color: #6a4c93;
+    display: grid;
+    place-items: center;
+}
+
+.game-info{
+    color: #FFECD6;
+    background-color: #1982c4;
+    border-radius: 1rem;
+    border: 3px solid #8ac926;
+    padding: 0.5rem 3rem ;
+}
+
+.tic-tac-toe{
+    width: 90%;
+    max-width: 20rem;
+    border-radius: 1rem;
+    border: 3px solid  #ffca3a;
+    background-color: #ff595e;
+    padding: 2rem;
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(3,1fr);
+    aspect-ratio: 1/1;
+}
+
+.box{
+    cursor: pointer;
+    width: 100%;
+    aspect-ratio: 1/1;
+    font-size: 3rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.box1,.box2,.box4,.box5{
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+.box3,.box6{
+    border-bottom: 2px solid white;
+}
+
+.box7,.box8{
+    border-right: 2px solid white;
+}
+
+.btn{
+    color: #FFECD6;
+    background-color: #0F2167;
+    border-radius: 1rem;
+    border: 3px solid #4CB9E7;
+    padding: 0.5rem 3rem;
+    cursor: pointer;
+}
+
+.win{
+    background-color: rgba(0,255,0,0.3);
+}
